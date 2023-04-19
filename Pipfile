@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+python_version = "3"
+
+[packages]
+flake8 = "*"
+bandit = "*"
+
+[dev-packages]
+build = "*"
+setuptools = "*"
+setuptools_scm = "*"
+twine = "*"
