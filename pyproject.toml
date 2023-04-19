@@ -1,0 +1,27 @@
+[build-system]
+requires = ['setuptools', 'setuptools-scm']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools_scm]
+# This empty section is required
+
+[project]
+name = 'snipeit'
+description = 'Python library to access the SnipeIT API'
+author = 'Jared Bloomer (Cox Automotive Inc.)',
+author_email = 'jared.bloomer@coxautoinc.com',
+url = 'https://github.com/jbloomer/SnipeIT-PythonAPI'
+readme = 'README.rst'
+requires-python = '>=3.9'
+keywords = ['snipeit']
+license = {text = 'MIT'}
+classifiers = [
+    'Programming Language :: Python :: 3',
+]
+dependencies = [
+    'requests>=2.28.1',
+    'simplejson'
+]
+dynamic = ['version']
+
+[project.optional-dependencies]
